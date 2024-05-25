@@ -1,0 +1,68 @@
+
+
+                                                              TIME COMPLEXITIES:
+                                                            <-------------------->
+
+Aspect                                                            	Linked List	                                                           Dynamic Array
+Insertion at Head	                                                    O(1)	                                                                    O(n)
+Insertion at End                              	O(1) (with tail pointer) / O(n) (without tail pointer)	                O(1) amortized, O(n) worst-case (due to resizing)
+Insertion at Index                                                  	O(n)	                                                                    O(n)
+Deletion at Head	                                                    O(1)	                                                                    O(n)
+Deletion at End	                                                      O(n) / O(1) (doubly linked list)	                                        O(n)
+Deletion at Index	                                                    O(n)	                                                                    O(n)
+Get Size	                                       O(1) (if size is maintained) / O(n) (if not)	                                                   O(1)
+Is Empty                                                            	O(1)	                                                                     O(1)
+Rotate Right	                                                        O(n)	                                                                     O(n)
+Reverse                                                              	O(n)	                                                                     O(n)
+Append	                                      O(1) (with tail pointer) / O(n) (without tail pointer)	                    O(1) , O(n) worst-case (due to resizing)
+Prepend	                                                              O(1)	                                                                     O(n)
+Merge	                                                                O(n)	                                            O(n + m) where n and m are the sizes of both arrays
+Interleave	                                  O(n + m) where n and m are the sizes of both lists	                      O(n + m) where n and m are the sizes of both arrays
+Get Middle	                                                          O(n)                                                                      	O(1)
+Index Of	                                                            O(n)	                                                                      O(n)
+Split At Index	                                                      O(n)	                                                                      O(n)
+
+
+<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                                                              SPACE COMPLEXITIES
+                                                            <-------------------->
+
+Method                                                         	Linked List                                                                 Dynamic Array 
+Insert at Head	                                             O(1) additional space                                                      	O(1) additional space
+Insert at End	                                               O(1) additional space                                                	O(1) additional space (amortized)
+Insert at Index	                                             O(1) additional space	                                                      O(1) additional space
+Delete at Head                                               O(1) additional space                                                      	O(1) additional space
+Delete at End                                                O(1) additional space	                                                      O(1) additional space
+Delete at Index	                                             O(1) additional space	                                                      O(1) additional space
+Get Size	                                                   O(1) additional space	                                                      O(1) additional space
+Is Empty	                                                   O(1) additional space	                                                      O(1) additional space
+Rotate Right	                                               O(1) additional space	                                                      O(1) additional space
+Reverse	                                                     O(1) additional space	                                                      O(1) additional space
+Append	                                                     O(1) additional space	                                                      O(1) additional space (amortized)
+Prepend	                                                     O(1) additional space	                                                      O(1) additional space
+Merge	                                                       O(1) additional space	                                                      O(n + m) additional space
+Interleave	                                                 O(n + m) additional space (new list)	                                        O(n + m) additional space (new array)
+Get Middle	                                                 O(1) additional space	                                                      O(1) additional space
+Index Of	                                                   O(1) additional space	                                                      O(1) additional space
+Split At Index	                                             O(n) additional space (new list)	                                            O(n) additional space (new array)
+
+                                                        
+<---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                                                                   Comparision:
+                                                                <--------------->
+                                                                        
+Use a Linked List:                                                                       Use a Dynamic Array if:
+<----------------->                                                                      <----------------------->
+You need frequent insertions and deletions, especially at the ends.                      You need fast random access to elements.
+The collection size changes dynamically and frequently.                                  The collection size does not change drastically and frequently.
+You don't require fast random access to elements.                                        You prefer better cache performance and contiguous memory storage.
+
+
+
+
+
+
+
+
+
