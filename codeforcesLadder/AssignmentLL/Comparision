@@ -16,8 +16,8 @@ Rotate Right	                                                        O(n)	      
 Reverse                                                              	O(n)	                                                                     O(n)
 Append	                                      O(1) (with tail pointer) / O(n) (without tail pointer)	                    O(1) , O(n) worst-case (due to resizing)
 Prepend	                                                              O(1)	                                                                     O(n)
-Merge	                                                                O(n)	                                            O(n + m) where n and m are the sizes of both arrays
-Interleave	                                  O(n + m) where n and m are the sizes of both lists	                      O(n + m) where n and m are the sizes of both arrays
+Merge	                                                                O(n)	                                           O(n + m) where n and m are the sizes of both arrays
+Interleave	                                  O(n + m) where n and m are the sizes of both lists	                     O(n + m) where n and m are the sizes of both arrays
 Get Middle	                                                          O(n)                                                                      	O(1)
 Index Of	                                                            O(n)	                                                                      O(n)
 Split At Index	                                                      O(n)	                                                                      O(n)
